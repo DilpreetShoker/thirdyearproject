@@ -22,3 +22,8 @@ open-cv
 mediapipe
 
 
+In order to see the yolov5 results, go to the yolov5 folder and start tensorboard
+
+the log directory is 'runs/train'
+
+

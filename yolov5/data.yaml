@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 2
+names: ['-', 'bat']
+
+roboflow:
+  workspace: cricketbatting-kvxyo
+  project: cricket-bat-detection
+  version: 1
+  license: Public Domain
+  url: https://universe.roboflow.com/cricketbatting-kvxyo/cricket-bat-detection/dataset/1

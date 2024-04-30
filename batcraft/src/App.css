@@ -1,0 +1,340 @@
+:root{
+  --primary-colour: #001011;
+  --secondary-colour: #3AAFB9;
+  --colour-3: #093A3E;
+  --colour-4: #97C8EB;
+  --colour-4: #64E9EE;
+
+}
+.content {
+  display: flex;
+  width: 100%;
+  height: 100vh; /* Use viewport height for full height */
+}
+
+.black-box {
+  background-color: var(--primary-colour);
+  /* width: 30%;
+  height: 100%;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  z-index: 0; */
+}
+
+.white-box {
+  background-color: var(--primary-colour);
+  width: 100%;
+  height: 100%;
+}
+
+
+.navbar {
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  background-color: var(--primary-colour);
+  padding: 10px;
+  padding-right: 10%;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.navbar img{
+  margin-left: 10%;
+  height: 100%;
+}
+.nav-btn {
+  height:50px;
+  margin-top: 10px;
+  background: linear-gradient(to right, var(--secondary-colour) 50%, white 50%);
+  background-size: 200% 100%;
+  color: var(--primary-colour);
+  padding: 10px 30px;
+  margin-left: 50px;
+  border:none;
+  cursor: pointer;
+  border-left: var(--secondary-colour) solid 30px;
+  background-position: right bottom;
+  transition: all .5s ease-out;
+}
+
+.nav-btn:hover {
+  background-position: left bottom;
+}
+
+.center-div {
+  position: absolute;
+  top: 150px; /* Adjust this value to move it under the navbar */
+  width: 80%;
+  margin-left:10%;
+  height: 450px; /* Adjust the height as needed */
+  z-index: 1;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.loading-div{
+  display: block;
+  position: absolute;
+  top: 150px; /* Adjust this value to move it under the navbar */
+  width: 80%;
+  margin-left:10%;
+  background-color: var(--secondary-colour);
+  height: 450px; /* Adjust the height as needed */
+  z-index: 3;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  text-align: center;
+  font-size: 60px;
+  color: white;
+}
+.AboutUs-div{
+  display: block;
+  position: absolute;
+  top: 150px; /* Adjust this value to move it under the navbar */
+  width: 80%;
+  margin-left:10%;
+  background-color: var(--secondary-colour);
+  height: 450px; /* Adjust the height as needed */
+  z-index: 3;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  text-align: center;
+  font-size: 60px;
+  color: white;
+}
+.AboutUs-div p{
+  font-size: 30px;
+}
+.AboutUs-div h1{
+  font-size: 50px;
+  padding: 20px 20px;
+}
+.results-div{
+  display: block;
+  position: absolute;
+  top: 150px; /* Adjust this value to move it under the navbar */
+  width: 80%;
+  margin-left:10%;
+  background-color: white;
+  height: 450px; /* Adjust the height as needed */
+  z-index: 3;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  text-align: center;
+  color: var(--primary-colour);
+}
+
+.results-div .left-section .instructions{
+  width: 100%;
+  text-align: left;
+}
+.results-div .left-section .instructions .heading{
+  text-align: left;
+}
+.loading-text{
+  margin-top: 180px;
+}
+.left-section{
+  background-color: var(--primary-colour);
+  color: white;
+  display:inline-block;
+  width:70%;
+  height: 100%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+}
+.left-section .title, .right-section .title{
+  text-align: center;
+  font-size: 40px;
+  font-weight: 900;
+  margin-top: 20px;
+}
+span{
+  color: var(--secondary-colour);
+}
+.left-section img{
+  width: 30%;
+  margin-left: 5%;
+  display: inline-block;
+  margin-top: 80px;
+}
+.left-section .instructions{
+  width: 55%;
+  margin-left: 5%;
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 30px;
+  
+}
+.instructions .heading{
+  text-align: center;
+  font-size: 30px;
+  border-bottom: var(--secondary-colour) 3px solid;
+}
+.instructions .step{
+  width:100%;
+  margin-top: 5px;
+}
+.step .num{
+  width: 40px;
+  height: 8px;
+  padding-top:10px;
+  padding-bottom: 22px;
+  text-align: center;
+  border-radius: 25px;
+  color:var(--primary-colour);
+  background-color: var(--secondary-colour);
+  display: inline-block;
+}
+.step .msg{
+  padding: 25px 0;
+  text-align: center;
+  width:auto;
+  margin-left: 5%;
+  display: inline-block;
+}
+.right-section{
+  vertical-align: top;
+  display:inline-block;
+  width:30%;
+  height: 100%;
+  background-color: var(--secondary-colour);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+input[type = "file"]{
+  color: transparent;
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 20px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+input[type="file"]::file-selector-button{
+  text-align: center;
+  display: inline-block;
+  cursor: pointer;
+  font-size: 13px;
+  height: 50px;
+  width: 100%;
+  background: linear-gradient(to right, var(--primary-colour) 50%, white 50%);
+  background-size: 200% 100%;
+  color: var(--primary-colour);
+  
+  border:none;
+  cursor: pointer;
+  border-left: var(--primary-colour) solid 30px;
+  background-position: right bottom;
+  transition: all .5s ease-out;
+}
+.right-section button{
+  display: block;
+  cursor: pointer;
+  height:54px;
+  font-size: 13px;
+  width: 80%;
+  background: linear-gradient(to right, var(--primary-colour) 50%, white 50%);
+  background-size: 200% 100%;
+  color: var(--primary-colour);
+  margin-left: 10%;
+  margin-top: 20px;
+  border:none;
+  cursor: pointer;
+  border-left: var(--primary-colour) solid 30px;
+  background-position: right bottom;
+  transition: all .5s ease-out;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.right-section input[type="file"]::file-selector-button:hover, .right-section button:hover{
+  background-position: left bottom;
+  color: white;
+}
+
+.right-section .statusText{
+  color: var(--secondary-colour);
+  background-color: var(--primary-colour);
+  text-align: center;
+  padding: 20px 0px;
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 20px;
+}
+
+.right-section .statusHeading{
+  color: var(--primary-colour);
+  border-bottom: var(--primary-colour) 1px solid;
+  font-weight: 600;
+  width: 80%;
+  margin-left: 10%;
+}
+.right-section .status{
+  margin-left: 10%;
+  width: 80%;
+  border: var(--primary-colour) 1px solid;
+  margin-top: 20px;
+  padding: 20px 0;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.shot{
+  top:0;
+  display: inline-block;
+  height: 54px;
+  width: 80%;
+  margin-left: 10%;
+  background: white;
+  border-radius: 0;
+  margin-top: 20px;
+
+}
+
+.shot-label {
+  font-weight: bold;
+  position: relative;
+  display: table-caption;
+  z-index: 2;
+  float: left;
+  width: 20%;
+  margin-top: 13px;
+  font-size: 12px;
+  padding: 0 6.6%;
+  color: var(--primary-colour);
+  text-align: center;
+  cursor: pointer;
+}
+
+.shot-input {
+  display: none;
+}
+
+.shot-input:checked + .shot-label {
+  color: #FFF;
+  transition: 0.15s ease-out;
+  transition-property: color, text-shadow;
+}
+
+.shot-input:checked + .coverDrive ~ .shot-selector {
+  transform: translateX(0%);
+}
+.shot-input:checked + .straightDrive ~ .shot-selector {
+  transform: translateX(100%);
+}
+.shot-input:checked + .pullShot ~ .shot-selector {
+  transform: translateX(200%);
+}
+
+
+.shot-selector {
+  position: absolute;
+  z-index: 1;
+  display: block;
+  width: 8%;
+  height: 54px;
+  border-radius: 0px;
+  background-color: var(--primary-colour);
+  transition: all 0.3s cubic-bezier(0.18, 0.69, 0.32, 1.28);
+} 
+.circle-bar{
+  margin-top: 50px;
+}
+.hidden {
+  display: none;
+}
